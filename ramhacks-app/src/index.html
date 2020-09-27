@@ -12,5 +12,29 @@
   <app-root></app-root>
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyB77B0ixl6n_5H4LWtDZmdWIbGpp1lOFzs",
+      authDomain: "ramhacks-cloud.firebaseapp.com",
+      databaseURL: "https://ramhacks-cloud.firebaseio.com",
+      projectId: "ramhacks-cloud",
+      storageBucket: "ramhacks-cloud.appspot.com",
+      messagingSenderId: "185373263088",
+      appId: "1:185373263088:web:63ffbac59d59299b82ee35",
+      measurementId: "G-3BWVE3DQH0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
 </html>
